@@ -9,5 +9,5 @@ resource "azurerm_redis_cache" "redis" {
 }
 
 output "cache_hostname" {
-  value = azurerm_redis_cache.redis.hostname
+  value = azurerm_redis_instance.redis.hostname
 }
